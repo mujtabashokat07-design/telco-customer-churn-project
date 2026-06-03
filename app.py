@@ -19,6 +19,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
+# 'data/' hata dein agar file bahaar hai
+df = pd.read_csv('WA_Fn-UseC_-Telco-Customer-Churn.csv')
+
 
 DATA_PATH = os.path.join("data", "WA_Fn-UseC_-Telco-Customer-Churn.csv")
 PIPELINE_PATH = os.path.join("models", "churn_pipeline.pkl")
