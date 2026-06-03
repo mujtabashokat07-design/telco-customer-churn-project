@@ -1,3 +1,18 @@
+import subprocess
+import sys
+
+# Agar joblib nahi hai toh manually install karein
+try:
+    import joblib
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "joblib", "scikit-learn", "pandas", "numpy", "plotly"])
+    import joblib
+
+# Aapka baaki ka code iske neeche aayega
+import streamlit as st
+import pandas as pd
+# ... baaki saare imports
+
 import os
 from typing import Dict, Tuple
 
