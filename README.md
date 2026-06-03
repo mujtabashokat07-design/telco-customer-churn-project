@@ -76,7 +76,7 @@ streamlit run app.py
 
 The app provides dataset visualization, model comparison, and a prediction interface for new customer records.
 
-## What’s Included
+## Whatâ€™s Included
 
 - Cleaned dataset handling and missing value processing
 - One-hot encoding for categorical features
@@ -94,21 +94,11 @@ The app provides dataset visualization, model comparison, and a prediction inter
 +-- train.py
 +-- requirments.txt
 +-- data/
-¦   +-- WA_Fn-UseC_-Telco-Customer-Churn.csv
-¦   +-- cleaned_data.csv
+Â¦   +-- WA_Fn-UseC_-Telco-Customer-Churn.csv
+Â¦   +-- cleaned_data.csv
 +-- models/
-¦   +-- churn_pipeline.pkl
+Â¦   +-- churn_pipeline.pkl
 +-- notebooks/
     +-- eda.ipynb
     +-- model_testing.ipynb
 ```
-
-## Notes
-
-- `app.py` uses Streamlit caching to speed up data and model loading.
-- The current training script uses a Random Forest by default, but `app.py` supports multiple classifiers in the dashboard code.
-- Update the dataset path if you move the CSV file.
-
-## Contact
-
-For questions or enhancements, review the notebooks and inspect `app.py` / `train.py` for implementation details.
