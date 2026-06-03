@@ -45,7 +45,7 @@ def build_pipeline(X: pd.DataFrame) -> Pipeline:
 
 
 def main() -> None:
-    data_path = os.path.join("data", "WA_Fn-UseC_-Telco-Customer-Churn.csv")
+    data_path = os.path.join("WA_Fn-UseC_-Telco-Customer-Churn.csv")
     df = load_data(data_path)
 
     X = df.drop(columns=["Churn"])
