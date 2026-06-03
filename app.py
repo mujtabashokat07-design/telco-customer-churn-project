@@ -1,16 +1,3 @@
-import subprocess
-import sys
-
-try:
-    import joblib
-except ImportError:
-    # '--user' flag lagane se permission ka error nahi aayega
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "--user", "joblib", "scikit-learn", "pandas", "numpy", "plotly"])
-    import joblib
-
-# Iske neeche aapka baaki code aayega...
-import streamlit as st
-
 import os
 from typing import Dict, Tuple
 
